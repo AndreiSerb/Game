@@ -10,9 +10,9 @@ function jump() {
 }
 
 var checkDead = setInterval(function(){
-    var characterTop = parseInt(window.getComputedStyle(character).getPropertyValue("top"));
+    var characterBottom = parseInt(window.getComputedStyle(character).getPropertyValue("bottom"));
     var blockLeft = parseInt(window.getComputedStyle(block).getPropertyValue("left"));
-    if(blockLeft<50 && blockLeft>0 && characterTop>=150) {
+    if(blockLeft<50 && blockLeft>0 && characterBottom<50) {
        block.style.animation = "none";
        block.style.display = "none";
         alert("You Lost.")
