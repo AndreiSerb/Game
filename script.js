@@ -1,5 +1,4 @@
 var character = document.getElementById("character");
-console.log(character)
 var block = document.getElementById("block");
 function jump() {
     if(character.classList !="animate"){
